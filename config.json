@@ -5,7 +5,7 @@
   },
   "domainName" : "WORKGROUP",
   "allowAnonymous" : false,
-  "smb2Support": false,
+  "smb2Support": true,
   "extendedSecurity": true,
   "users" : {
     "test" : {
