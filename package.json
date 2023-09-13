@@ -27,6 +27,7 @@
     "mime": "^1.4.1",
     "mkdirp": "^0.5.1",
     "nedb": "^1.8.0",
+    "node-aes-cmac": "^0.1.1",
     "put": "~0.0.6",
     "request": "^2.85.0",
     "requestretry": "^1.12.0",
