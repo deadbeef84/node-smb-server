@@ -12,6 +12,7 @@
     "Share",
     "Server"
   ],
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node ./index.js"
@@ -28,6 +29,7 @@
     "mkdirp": "^0.5.1",
     "nedb": "^1.8.0",
     "node-aes-cmac": "^0.1.1",
+    "pino": "^8.19.0",
     "put": "~0.0.6",
     "request": "^2.85.0",
     "requestretry": "^1.12.0",
@@ -45,5 +47,13 @@
   },
   "bugs": {
     "url": "https://github.com/adobe/node-smb-server/issues"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "^3.2.5"
   }
 }

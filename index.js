@@ -10,9 +10,9 @@
  *  governing permissions and limitations under the License.
  */
 
-'use strict';
+'use strict'
 
-var init = require('./lib/logging');
+import init from './lib/logging.js'
 init(null, function () {
-  require('./lib/server');
-});
+  import('./lib/server.js')
+})
