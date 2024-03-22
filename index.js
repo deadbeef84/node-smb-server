@@ -10,9 +10,18 @@
  *  governing permissions and limitations under the License.
  */
 
-'use strict'
+import fs from 'node:fs'
+import logger from './lib/logger.js'
+import SMBServer from './lib/smbserver.js'
 
-import init from './lib/logging.js'
-init(null, function () {
-  import('./lib/server.js')
+const config = JSON.parse(fs.readFileSync('config.json'))
+const server = new SMBServer(config, null)
+
+const port = config.listen?.port ?? 445
+const host = config.listen?.host ?? '0.0.0.0'
+
+server.start(port, host)
+server.on('error', err => {
+  logger.error({ err }, 'error during startup, exiting... : %s')
+  process.exit(1)
 })
