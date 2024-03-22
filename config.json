@@ -1,6 +1,6 @@
 {
   "listen" : {
-    "port" : 8445,
+    "port" : 445,
     "host" : "0.0.0.0"
   },
   "domainName" : "WORKGROUP",
@@ -22,7 +22,7 @@
     }
   },
   "shares": {
-    "FS": {
+    "nxt": {
       "backend": "fs",
       "description": "fs-based test share",
       "path": "./smbroot"
